@@ -1,30 +1,39 @@
 package ex10;
 
-import java.util.Scanner;
+class Car {
+    public int speed;
+    public int gear;
+    public String color;
+
+    public Car() {
+        speed = 0;
+        gear = 1;
+        color = "red";
+    }
+
+    public void speedUp() {
+        speed += 10;
+    }
+
+    public String toString() {
+        return "속도" + speed + "기어" + gear + "색상" + color; // 문자열로 리턴하는 방법
+    }
+}
 
 public class Array05 {
-    final static int STUDENTS = 3;
-
     public static void main(String[] args) {
-
-        int[] scores = new int[STUDENTS];
-        getValues(scores);
-        getAverages(scores);
-    }
-
-    private static void getValues(int[] array) {
-        Scanner scan = new Scanner(System.in);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println("성적을 입력하시오");
-            array[i] = scan.nextInt();
+        final int NUM_CARS = 5;
+        Car[] cars = new Car[NUM_CARS];
+        for (int i = 0; i < cars.length; i++) {
+            cars[i] = new Car();
         }
-    }
+        for (int i = 0; i < cars.length; i++) {
+            cars[i].speedUp();
+        }
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i]);
+        }
 
-    private static void getAverages(int[] array) {
-        int total = 0;
-        for (int i = 0; i < array.length; i++)
-            total += array[i];
-        System.out.println("평균 성적은" + total / array.length + "입니다");
     }
 
 }
