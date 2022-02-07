@@ -1,18 +1,15 @@
 package postapp;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @AllArgsConstructor
 @Data
-
-public class User {
+public class User1 {
     private int id;
-    private String title;
-    private String content;
-    private List<User1> user;
+    private String username;
+    private String password;
+    private String email;
     private String created;
     private String updated;
 

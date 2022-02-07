@@ -10,6 +10,6 @@ import lombok.Data;
 public class ResponseDto {
     private int code;
     private String msg;
-    private List<User> data;
+    private List<Data> data;
 
 }
