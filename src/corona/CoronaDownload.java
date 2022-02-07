@@ -43,14 +43,14 @@ public class CoronaDownload {
             System.out.println("기준일=" + resultStatedt);
             System.out.println("기준시간=" + resultTime);
             System.out.println("수정일시분초=" + resultUpdate);
-            String resultAcc1 = dto.getResponse().getBody().getItems().getItem().get(5).getAccExamCnt();
-            String resultCre1 = dto.getResponse().getBody().getItems().getItem().get(5).getCreateDt();
-            String resultDeath1 = dto.getResponse().getBody().getItems().getItem().get(5).getDeathCnt();
-            String resultDeci1 = dto.getResponse().getBody().getItems().getItem().get(5).getDecideCnt();
-            String resultSeq1 = dto.getResponse().getBody().getItems().getItem().get(5).getSeq();
-            String resultStatedt1 = dto.getResponse().getBody().getItems().getItem().get(5).getStateDt();
-            String resultTime1 = dto.getResponse().getBody().getItems().getItem().get(5).getStateTime();
-            String resultUpdate1 = dto.getResponse().getBody().getItems().getItem().get(5).getUpdateDt();
+            String resultAcc1 = dto.getResponse().getBody().getItems().getItem().get(0).getAccExamCnt();
+            String resultCre1 = dto.getResponse().getBody().getItems().getItem().get(0).getCreateDt();
+            String resultDeath1 = dto.getResponse().getBody().getItems().getItem().get(0).getDeathCnt();
+            String resultDeci1 = dto.getResponse().getBody().getItems().getItem().get(0).getDecideCnt();
+            String resultSeq1 = dto.getResponse().getBody().getItems().getItem().get(0).getSeq();
+            String resultStatedt1 = dto.getResponse().getBody().getItems().getItem().get(0).getStateDt();
+            String resultTime1 = dto.getResponse().getBody().getItems().getItem().get(0).getStateTime();
+            String resultUpdate1 = dto.getResponse().getBody().getItems().getItem().get(0).getUpdateDt();
 
             System.out.println("==============");
             System.out.println("1월 15일 종료일");
