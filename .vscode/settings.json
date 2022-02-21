@@ -5,6 +5,7 @@
         "lib/**/*.jar",
         "/Users/green_workspace/downloads/JAVA_HOME/javaSDK-2.2.jar",
         "/Users/green_workspace/downloads/JAVA_HOME/java-sdk-2.2-http-cv52/**/*.jar",
-        "/Users/green_workspace/downloads/JAVA_HOME/gson-2.8.5.jar"
+        "/Users/green_workspace/downloads/JAVA_HOME/gson-2.8.5.jar",
+        "/Users/green_workspace/tools/ojdbc8-21.1.0.0.jar"
     ]
 }
